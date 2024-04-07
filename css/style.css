@@ -223,7 +223,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
+    background: #000;
     transition: .3s;
 }
 
@@ -242,7 +242,7 @@ a:focus {
 
 .nav-bar .navbar {
     height: 100%;
-    background: #030f27 !important;
+    background: #000000 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -255,7 +255,8 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fdbe33;
+    color: white;
+    text-shadow: 2px 2px 6px #fff;
     transition: none;
 }
 
