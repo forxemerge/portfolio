@@ -9,7 +9,7 @@
 
 body {
     color: #666666;
-    background: #dddddd;
+    background: linear-gradient(45deg, #0f0f0f, #000);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -45,7 +45,7 @@ a:focus {
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
-    background: #ffffff;
+    background: #0f0f0f;
 }
 
 .back-to-top {
@@ -253,8 +253,7 @@ a:focus {
     color: #ffffff;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link:hover {
     color: white;
     text-shadow: 2px 2px 6px #fff;
     transition: none;
@@ -454,12 +453,10 @@ a:focus {
     margin-bottom: 45px;
     padding: 90px 0;
     text-align: center;
-    background: #fdbe33;
 }
 
 .page-header h2 {
     position: relative;
-    color: #030f27;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -473,18 +470,18 @@ a:focus {
     height: 2px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #030f27;
+    background: #fff;
 }
 
 .page-header a {
     position: relative;
     padding: 0 12px;
     font-size: 22px;
-    color: #030f27;
+    color: #fff;
 }
 
 .page-header a:hover {
-    color: #ffffff;
+    color: darkviolet;
 }
 
 .page-header a::after {
@@ -495,7 +492,7 @@ a:focus {
     top: -2px;
     right: -7px;
     text-align: center;
-    color: #121518;
+    color: #fff;
 }
 
 .page-header a:last-child::after {
@@ -541,7 +538,7 @@ a:focus {
 }
 
 .section-header p {
-    color: #fdbe33;
+    color: #fff;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -683,6 +680,7 @@ a:focus {
 }
 
 .about .about-text p {
+    color:#fff;
     font-size: 16px;
 }
 
@@ -739,13 +737,14 @@ a:focus {
     margin: 0;
     font-size: 60px;
     line-height: 60px;
-    background-image: linear-gradient(#ffffff, #fdbe33);
+    background-image: linear-gradient(#ffffff, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.fact .fact-right .fact-icon [class^="flaticon-"]::before {
-    background-image: linear-gradient(#ffffff, #030f27);
+.fact .fact-right .fact-icon [class^="flaticon-"]::before {  
+      background-image: linear-gradient(#000, #000);
+
 }
 
 .fact .fact-left,
@@ -767,17 +766,21 @@ a:focus {
 }
 
 .fact .fact-left {
-    color: #fdbe33;
-    background: #030f27;
+    color: #fff;
+    background: #000;
 }
 
 .fact .fact-right {
-    color: #030f27;
-    background: #fdbe33;
+    color: #000;
+    background: #fff;
 }
 
 .fact .fact-left h2 {
-    color: #fdbe33;
+    color: #fff;
+}
+
+.fact .fact-right h2 {
+    color: #000;
 }
 
 
@@ -816,8 +819,8 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(3, 15, 39, .7);
-    transition: .5s;
+    background: rgba(15, 15, 15,.8);
+    transition: .4s;
     opacity: 0;
 }
 
@@ -834,10 +837,12 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #030f27;
+    background: #fff;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
 }
 
 .service .service-text h3 {
@@ -846,7 +851,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
-    color: #fdbe33;
+    color: #0f0f0f;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -1008,6 +1013,7 @@ a:focus {
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
+    border-radius:20px
 }
 
 .team .team-img {
@@ -1022,28 +1028,32 @@ a:focus {
     position: relative;
     padding: 25px 15px;
     text-align: center;
-    background: #030f27;
+    background: #fff;
     transition: .5s;
 }
 
 .team .team-text h2 {
     font-size: 20px;
     font-weight: 600;
-    color: #fdbe33;
+    color: #000;
     transition: .5s;
 }
 
 .team .team-text p {
     margin: 0;
-    color: #ffffff;
+    color: #000;
 }
 
 .team .team-item:hover .team-text {
-    background: #fdbe33;
+    background: rgba(0, 0, 0, .5);
 }
 
 .team .team-item:hover .team-text h2 {
-    color: #030f27;
+    color:#fff;
+    letter-spacing: 1px;
+}
+.team .team-item:hover .team-text p {
+    color:#fff;
     letter-spacing: 1px;
 }
 
@@ -1114,7 +1124,7 @@ a:focus {
     height: 100%;
     top: 0;
     left: calc(50% - .5px);
-    background: #fdbe33;
+    background: #FFF;
 }
 
 .faqs #accordion-1 {
@@ -1143,7 +1153,6 @@ a:focus {
 .faqs .card {
     margin-bottom: 15px;
     border: none;
-    border-radius: 0;
 }
 
 .faqs .card:last-child {
@@ -1152,7 +1161,7 @@ a:focus {
 
 .faqs .card-header {
     padding: 0;
-    border: none;
+    border:none;
     background: #ffffff;
 }
 
@@ -1160,7 +1169,7 @@ a:focus {
     display: block;
     padding: 10px 25px;
     width: 100%;
-    color: #121518;
+    color: #000;
     font-size: 16px;
     line-height: 40px;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -1168,14 +1177,15 @@ a:focus {
 }
 
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"] {
-    background: #fdbe33;
+    background: #0f0f0f;
+    color:#fff;
 }
 
 .faqs .card-header [data-toggle="collapse"]:after {
     font-family: 'font Awesome 5 Free';
     content: "\f067";
     float: right;
-    color: #fdbe33;
+    color: #000;
     font-size: 12px;
     font-weight: 900;
     transition: .5s;
@@ -1208,7 +1218,7 @@ a:focus {
     margin: 45px 0;
     padding: 90px 0;
     text-align: center;
-    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(15, 15, 15,.9),rgb(15, 15, 15,.9)), url(../img/carousel-1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1271,7 +1281,7 @@ a:focus {
 }
 
 .testimonial .testimonial-slider h3 {
-    color: #fdbe33;
+    color: #fff;
     font-size: 22px;
     font-weight: 700;
 }
@@ -1289,132 +1299,6 @@ a:focus {
     font-size: 16px;
     font-weight: 300;
     margin: 0;
-}
-
-
-/*******************************/
-/*********** Blog CSS **********/
-/*******************************/
-.blog {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.blog .blog-item {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.blog .blog-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.blog .blog-img img {
-    width: 100%;
-}
-
-.blog .blog-title {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    background: #030f27;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.blog .blog-title h3 {
-    margin: 0;
-    padding: 0 15px 0 25px;
-    width: calc(100% - 60px);
-    font-size: 18px;
-    font-weight: 700;
-    color: #fdbe33;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.blog .blog-title a.btn {
-    width: 60px;
-    height: 60px;
-    padding: 3px 0 0 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 100;
-    color: #030f27;
-    background: #fdbe33;
-    border-radius: 0;
-    transition: .3s;
-}
-
-.blog .blog-item:hover a.btn {
-    color: #ffffff;
-}
-
-.blog .blog-meta {
-    position: relative;
-    padding: 25px 0 10px 0;
-    background: #f3f6ff;
-}
-
-.blog .blog-meta::after {
-    position: absolute;
-    content: "";
-    width: 100px;
-    height: 1px;
-    left: calc(50% - 50px);
-    bottom: 0;
-    background: #fdbe33;
-}
-
-.blog .blog-meta p {
-    display: inline-block;
-    margin: 0;
-    padding: 0 3px;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: italic;
-    color: #666666;
-}
-
-.blog .blog-meta p a {
-    margin-left: 5px;
-    font-style: normal;
-}
-
-.blog .blog-text {
-    padding: 10px 25px 25px 25px;
-    background: #f3f6ff;
-}
-
-.blog .blog-text p {
-    margin: 0;
-    font-size: 16px;
-}
-
-.blog .pagination .page-link {
-    color: #030f27;
-    border-radius: 0;
-    border-color: #fdbe33;
-}
-
-.blog .pagination .page-link:hover,
-.blog .pagination .page-item.active .page-link {
-    color: #fdbe33;
-    background: #030f27;
-}
-
-.blog .pagination .disabled .page-link {
-    color: #999999;
 }
 
 
