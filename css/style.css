@@ -380,8 +380,7 @@ a:focus {
 .carousel .carousel-caption h1 {
     color: #ffffff;
     font-size: 60px;
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 35px;
 }
 
@@ -396,12 +395,6 @@ a:focus {
     border: 2px solid #ffffff;
     border-radius: 0;
     transition: .3s;
-}
-
-.carousel .carousel-caption .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
 }
 
 @media (max-width: 767.98px) {
