@@ -1,0 +1,158 @@
+footer{
+    width: 100%;
+    color: #fff;
+    padding: 50px 0 30px;
+    border-top-left-radius: 100px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis: 15%;
+}
+.footer-logo{
+    margin-bottom: 30px;
+    margin-top: -40px;
+    height: 100px;
+    border-radius: 50px;
+}
+.footer-col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    height: 30px;
+    position: relative;
+    font-size: 25px;
+}
+.footer-col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.footer-col ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.footer-col ul li a:hover{
+    color: #f44;
+}
+.footer-form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.footer-form .fa{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.footer-form input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #fff;
+    margin-left: 10px;
+}
+.footer-btn{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.footer-btn .fa{
+    font-size: 16px;
+}
+.fa-arrow-right:before {
+    content: "\f061";
+    color: #fff;
+}
+.social-links .fa-brands{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    
+    cursor: pointer;
+    margin-right: 15px;
+    color:#fff;
+    background:#000;
+}
+.social-links .fa-brands:hover{
+    color: #000;
+    background: #fff;
+    transition: .3s;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copywright{
+    font-size: 16px;
+    text-align: center;
+    overflow-y: hidden;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: rgb(100, 100, 100);
+    margin-top: 10px;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow-x: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+footer p {
+    font-size: 15px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    footer{
+        bottom: unset;
+    }
+    .footer-col{
+        flex-basis: 100%;
+    }
+    .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
