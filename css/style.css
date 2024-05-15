@@ -56,7 +56,7 @@ a {
     z-index: 9;
 }
 
-a:hover{
+.back-to-top a:hover{
     color:#fff !important;
 }
 
@@ -788,10 +788,21 @@ a:hover{
 .service .service-img {
     position: relative;
     overflow: hidden;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-.service .service-img img {
-    width: 100%;
+#nope1{
+    background-image: url(../img/service-1.jpg);
+}
+
+#nope2{
+    background-image: url(../img/service-2.jpg);
+}
+
+#nope3{
+    background-image: url(../img/service-3.jpg);
 }
 
 .service .service-overlay {
@@ -1001,12 +1012,8 @@ a:hover{
     border-radius:20px
 }
 
-.team .team-img {
-    position: relative;
-}
-
-.team .team-img img {
-    width: 100%;
+.team-mem{
+    justify-content: center;
 }
 
 .team .team-text {
@@ -1105,7 +1112,7 @@ a:hover{
 .faqs .row::after {
     position: absolute;
     content: "";
-    width: 1px;
+    width: 2px;
     height: 100%;
     top: 0;
     left: calc(50% - .5px);
@@ -1164,26 +1171,6 @@ a:hover{
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"] {
     background: #0f0f0f;
     color:#fff;
-}
-
-.faqs .card-header [data-toggle="collapse"]:after {
-    font-family: 'font Awesome 5 Free';
-    content: "\f067";
-    float: right;
-    color: #000;
-    font-size: 12px;
-    font-weight: 900;
-    transition: .5s;
-}
-
-.faqs .card-header [data-toggle="collapse"][aria-expanded="true"]:after {
-    font-family: 'font Awesome 5 Free';
-    content: "\f068";
-    float: right;
-    color: #030f27;
-    font-size: 12px;
-    font-weight: 900;
-    transition: .5s;
 }
 
 .faqs .card-body {
@@ -1254,22 +1241,11 @@ a:hover{
 .testimonial .testimonial-slider {
     position: relative;
     margin-top: 15px;
-    padding-top: 50px;
-}
-
-.testimonial .testimonial-slider::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 50px;
-    top: 0;
-    left: calc(50% - 30px);
-    background: url(../img/quote.png) top center no-repeat;
 }
 
 .testimonial .testimonial-slider h3 {
     color: #fff;
-    font-size: 22px;
+    font-size: 40px;
     font-weight: 700;
 }
 
