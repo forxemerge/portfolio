@@ -794,15 +794,15 @@ a {
 }
 
 #nope1{
-    background-image: url(../img/service-1.jpg);
+    background: url(../img/service-1.jpg) no-repeat center;
 }
 
 #nope2{
-    background-image: url(../img/service-2.jpg);
+    background: url(../img/service-2.jpg) no-repeat center;
 }
 
 #nope3{
-    background-image: url(../img/service-3.jpg);
+    background: url(../img/service-3.jpg) no-repeat center;
 }
 
 .service .service-overlay {
